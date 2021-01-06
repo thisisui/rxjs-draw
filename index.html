@@ -2,9 +2,22 @@
 <html>
   <head>
     <title>RxJS Draw</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        canvas {
+            border: 1px solid #ccc;
+        }
+        .hidden {
+            display: none;
+            visibility: hidden;
+        }
+    </style>
   </head>
   <body>
-    <div id="output"></div>
+    <div id="output" class="hidden"></div>
+    <canvas width="900" height="900" id="rxjs-draw-board"></canvas>
     <script src="./dist/main.js"></script>
   </body>
 </html>
